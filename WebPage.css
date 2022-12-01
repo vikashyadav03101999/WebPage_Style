@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap");
+
+body {
+  background-image: url(https://i.pinimg.com/736x/50/69/61/5069613b363dc9f5c0bc4c9824ab26b7--background-hd-wallpaper-wallpaper-pc.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  font-family: "Josefin Sans", sans-serif;
+}
+.card-box {
+  background-color: rgb(255, 255, 255, 0.8);
+  margin-top: 15vh;
+  height: 70vh;
+  width: 70%;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  display: flex;
+}
+.card-box img {
+  height: 70vh;
+}
+.info {
+  width: 70%;
+  padding-left: 10%;
+  padding-top: 5%;
+}
+.info h4 {
+  color: rgb(245, 23, 168, 0.9);
+  margin-bottom: 5%;
+}
+.title {
+  font-size: 3rem;
+  letter-spacing: 0.8rem;
+  font-weight: 300;
+  color: rgb(250, 205, 149);
+  line-height: 3.1rem;
+}
+.title span {
+  font-weight: 500;
+  color: black;
+}
+.info p {
+  padding: 2rem 0;
+}
+.email {
+  position: relative;
+  align-items: center;
+}
+.email input {
+  width: 80%;
+  height: 3vh;
+  border-radius: 12px;
+  padding: 1rem;
+  border: 1px solid lightgrey;
+}
+.email input::placeholder {
+  font-size: 1rem;
+  font-weight: 450;
+}
+.image img {
+  width: 100%;
+  height: 100%;
+}
+
+@media only screen and (max-width: 850px) {
+  .card-box img{
+    width: 100%;
+    float: right;
+  }
+  .info p {
+    font-size: 0.8rem;
+    padding: 1rem 0;
+  }
+  .title {
+    font-size: 2rem;
+    letter-spacing: 0.5rem;
+  }
+  .card-box {
+    height: 100%;
+  }
+  .email svg {
+    width: 50px;
+  }
+}
+@media only screen and (max-height: 800px) {
+  .card-box {
+    height: fit-content;
+  }
+}
